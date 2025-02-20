@@ -1,0 +1,155 @@
+@import url(https://fonts.google.com/specimen/Montserrat?query=monts);
+@import url(https://fonts.google.com/specimen/Abril+Fatface?query=abril&sidebar.open&selection.family=Abril+Fatface);
+
+
+* {
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Montserrat';
+}
+body {
+    margin: 0 auto;
+}
+/* -----------------------NAVBAR---------------------------- */
+header {
+    background: url(bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    padding: 10px 25px;
+}
+#logo {
+    height: 100px;
+    width: 120px;
+}
+
+h1 {
+    color: white;
+    position: absolute;
+    top: 200px;
+    left: 50px;
+}
+
+h2 {
+    margin: 20px;
+}
+nav ul {
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+nav ul li {
+    margin: 10px 25px;
+    color: white;
+}
+
+/* -----------------------SERVICE------------------------------ */
+
+.emoji {
+    height: 100px;
+    width: 100px;
+}
+.detailsEmoji {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#service {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 30px 0;
+}
+
+/* --------------------------MEILLEURES VENTES-------------------------- */
+.best {
+    height: 400px;
+    width: 300px;
+    background-size: cover;
+    background-position: center
+}
+
+#meilleuresVentes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.meilleuresVentesDetails {
+    margin-bottom: 10px;
+}
+.nomPlante {
+    font-weight: bold;
+}
+.prixPlante {
+    color: greenyellow;
+}
+.savoirPlus {
+    position: relative;
+    left: 200px;
+    bottom: 38px;
+}
+
+/* ---------------------------NOS PLANTES ----------------------- */
+.boxgrid {
+    display: grid;
+    min-height: 150px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 400px);
+    gap: 20px;
+    margin: 20px;
+}
+.box {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.planteGrid1{
+    background-image: url(1.jpg);
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+.planteGrid2{
+    background-image: url(2.jpg);
+    grid-column: 3/5;
+}
+.planteGrid3{
+    background-image: url(3.jpg);
+    grid-column: 3/5;
+}
+.planteGrid4{
+    background-image: url(4.jpg);
+    grid-column: 1;
+    grid-row: 3/5;
+}
+.planteGrid5{
+    background-image: url(5.jpg);
+    grid-column: 2/5;
+    grid-row: 3/5;
+}
+.planteGrid6{
+    background-image: url(6.jpg);
+    grid-column: 4;
+    grid-row: 3/5;
+}
+.planteDetail {
+    position: absolute;
+    bottom: 0;
+    background-color: antiquewhite;
+    width: 100%;
+    opacity: 0.7;
+}
+
+
+/* ------------------footer----------------------------------- */
+
+footer ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+ 
+footer {
+    margin: 50px 0;
+}
